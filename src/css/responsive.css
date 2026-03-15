@@ -1,0 +1,168 @@
+/* ===== Responsive Breakpoints ===== */
+
+/* Tablet (max 1023px) */
+@media (max-width: 1023px) {
+  :root {
+    --navbar-height: 64px;
+  }
+
+  .navbar__nav {
+    display: none;
+  }
+
+  .navbar .btn-primary {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex !important;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .case-study-card {
+    flex-direction: column;
+  }
+
+  .case-study-card__text {
+    flex: 1;
+  }
+
+  .case-study-card__image {
+    flex: 1;
+    min-height: 220px;
+  }
+
+  .innovation-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .circle-diagram {
+    width: 300px;
+    height: 300px;
+  }
+
+  .stats-grid {
+    gap: var(--space-4);
+  }
+
+  .stat-divider {
+    display: none;
+  }
+
+  .about-grid {
+    flex-direction: column;
+  }
+
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-padding {
+    padding: 60px 0;
+  }
+}
+
+/* Mobile (max 767px) */
+@media (max-width: 767px) {
+  :root {
+    --navbar-height: 60px;
+  }
+
+  .hero {
+    min-height: 80vh;
+    padding-top: var(--navbar-height);
+  }
+
+  .hero__content {
+    max-width: 100%;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+
+  .case-study-card {
+    padding: var(--space-3);
+  }
+
+  .stats-grid {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .stat-block {
+    min-width: unset;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: var(--space-2);
+    text-align: center;
+  }
+
+  .carousel-card {
+    width: 300px;
+  }
+
+  .section-padding {
+    padding: 48px 0;
+  }
+
+  .case-studies__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+
+  .testimonial-card {
+    min-height: 240px;
+  }
+}
+
+/* Small Mobile (max 479px) */
+@media (max-width: 479px) {
+  .hero {
+    min-height: 70vh;
+  }
+
+  .carousel-card {
+    width: 260px;
+  }
+
+  .service-card {
+    padding: var(--space-3);
+  }
+
+  .stat-number {
+    font-size: 48px;
+  }
+
+  .cta-banner {
+    padding: var(--space-6) 0;
+  }
+}
+
+/* Large Desktop (min 1280px) */
+@media (min-width: 1280px) {
+  .hero__content {
+    max-width: 1000px;
+  }
+}
